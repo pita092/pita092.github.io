@@ -129,6 +129,6 @@ form input:focus {
   width: 700px;
   margin-left: -5rem;
   margin-top: -2rem;
-  background-color: var(--background-color);
-  box-shadow: var(--background-glow);
+  background-color: #1d2021;
+  box-shadow: #1d2021;
 }
