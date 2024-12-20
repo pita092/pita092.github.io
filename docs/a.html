@@ -7,41 +7,30 @@
 <style>
 * {font-family: monospace}
 body {background-color: #1d2021; color: #ebdbb2}
-.String {color: #b8bb26}
-.GruvboxRed {color: #fb4934}
-.GruvboxAqua {color: #8ec07c}
-.Operator {color: #fe8019}
-.GruvboxPurple {color: #d3869b}
-.GruvboxOrange {color: #fe8019}
 .GruvboxFg1 {color: #ebdbb2}
-.Comment {color: #928374}
+.GruvboxRed {color: #fb4934}
+.String {color: #b8bb26}
 .GruvboxGreenBold {color: #b8bb26; font-weight: bold}
+.GruvboxPurple {color: #d3869b}
 .GruvboxYellow {color: #fabd2f}
+.Operator {color: #fe8019}
+.GruvboxOrange {color: #fe8019}
 </style>
 </head>
 <body style="display: flex">
 <pre>
-<span class="GruvboxAqua">#include</span> <span class="String">&lt;stdio.h&gt;</span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">COLS</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">10</span></span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">ROWS</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">10</span></span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">CHAR</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">'#'</span></span>
-
 <span class="GruvboxYellow">int</span> <span class="GruvboxFg1"><span class="GruvboxGreenBold">main</span></span><span class="GruvboxOrange">(</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-  <span class="GruvboxYellow">char</span> <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1"><span class="GruvboxPurple">ROWS</span></span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1"><span class="GruvboxPurple">COLS</span></span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">;</span>
 
+  <span class="GruvboxYellow">int</span> <span class="GruvboxFg1">a</span> <span class="Operator">=</span> <span class="GruvboxPurple">10</span><span class="GruvboxOrange">;</span>
+  <span class="GruvboxYellow">int</span> <span class="GruvboxFg1">b</span> <span class="Operator">=</span> <span class="GruvboxPurple">10</span><span class="GruvboxOrange">;</span>
 
-
-
-  <span class="GruvboxRed">for</span> <span class="GruvboxOrange">(</span><span class="GruvboxYellow">int</span> <span class="GruvboxFg1">i</span> <span class="Operator">=</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">i</span> <span class="Operator">&lt;</span> <span class="GruvboxFg1"><span class="GruvboxPurple">ROWS</span></span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">i</span><span class="Operator">++</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-    <span class="GruvboxRed">for</span> <span class="GruvboxOrange">(</span><span class="GruvboxYellow">int</span> <span class="GruvboxFg1">j</span> <span class="Operator">=</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">j</span> <span class="Operator">&lt;</span> <span class="GruvboxFg1"><span class="GruvboxPurple">COLS</span></span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">j</span><span class="Operator">++</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'#'</span><span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxPurple">2</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxPurple">2</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'+'</span><span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">!=</span> <span class="GruvboxPurple">'#'</span><span class="GruvboxOrange">)</span> <span class="GruvboxRed">?</span> <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'+'</span> <span class="GruvboxOrange"><span class="GruvboxRed">:</span></span> <span class="GruvboxPurple">'#'</span> <span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1"><span class="GruvboxGreenBold">printf</span></span><span class="GruvboxOrange">(</span><span class="String"><span class="Comment">format: </span>&quot;%c&quot;</span><span class="GruvboxOrange">,</span><span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">)</span><span class="GruvboxOrange">;</span>
-    <span class="GruvboxOrange">}</span>
-    <span class="GruvboxFg1"><span class="GruvboxGreenBold">printf</span></span><span class="GruvboxOrange">(</span><span class="String"><span class="Comment">format: </span>&quot;<span class="GruvboxOrange">\n</span>&quot;</span><span class="GruvboxOrange">)</span><span class="GruvboxOrange">;</span>
+  <span class="GruvboxRed">if</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">a</span> <span class="Operator">==</span> <span class="GruvboxFg1">b</span> <span class="Operator">||</span> <span class="GruvboxFg1">b</span> <span class="Operator">==</span> <span class="GruvboxFg1">a</span> <span class="Operator">||</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">a</span> <span class="Operator">==</span> <span class="GruvboxFg1">b</span><span class="GruvboxOrange">)</span> <span class="Operator">&amp;&amp;</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">b</span> <span class="Operator">==</span> <span class="GruvboxFg1">a</span><span class="GruvboxOrange">)</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
+    <span class="GruvboxFg1">a</span> <span class="Operator">=</span> <span class="GruvboxFg1">b</span><span class="GruvboxOrange">;</span>
+  <span class="GruvboxOrange">}</span> <span class="GruvboxRed">else</span> <span class="GruvboxRed">if</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">a</span> <span class="Operator">!=</span> <span class="GruvboxFg1">b</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
+    <span class="GruvboxFg1">a</span> <span class="Operator">=</span> <span class="GruvboxFg1">b</span><span class="GruvboxOrange">;</span>
+  <span class="GruvboxOrange">}</span> <span class="GruvboxRed">else</span> <span class="GruvboxOrange">{</span>
+    <span class="GruvboxYellow">char</span> <span class="GruvboxFg1">d</span><span class="GruvboxOrange">[</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="String">&quot;hi&quot;</span><span class="GruvboxOrange">;</span>
   <span class="GruvboxOrange">}</span>
-
 
   <span class="GruvboxRed">return</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span>
 <span class="GruvboxOrange">}</span>
