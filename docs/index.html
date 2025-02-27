@@ -1,53 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-    <title>C code</title>
-<meta name="colorscheme" content="default"></meta>
-<style>
-* {font-family: monospace}
-body {background-color: #1d2021; color: #ebdbb2}
-.String {color: #b8bb26}
-.GruvboxRed {color: #fb4934}
-.GruvboxAqua {color: #8ec07c}
-.Operator {color: #fe8019}
-.GruvboxPurple {color: #d3869b}
-.GruvboxOrange {color: #fe8019}
-.GruvboxFg1 {color: #ebdbb2}
-.Comment {color: #928374}
-.GruvboxGreenBold {color: #b8bb26; font-weight: bold}
-.GruvboxYellow {color: #fabd2f}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pita's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="display: flex">
-<pre>
-<span class="GruvboxAqua">#include</span> <span class="String">&lt;stdio.h&gt;</span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">COLS</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">10</span></span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">ROWS</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">10</span></span>
-<span class="GruvboxAqua">#define</span> <span class="GruvboxFg1"><span class="GruvboxPurple"><span class="GruvboxAqua">CHAR</span></span></span> <span class="GruvboxFg1"><span class="GruvboxPurple">'#'</span></span>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Pita's World</h1>
+            <p>Your go-to space on the web</p>
+        </div>
+    </header>
 
-<span class="GruvboxYellow">int</span> <span class="GruvboxFg1"><span class="GruvboxGreenBold">main</span></span><span class="GruvboxOrange">(</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-  <span class="GruvboxYellow">char</span> <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1"><span class="GruvboxPurple">ROWS</span></span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1"><span class="GruvboxPurple">COLS</span></span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">;</span>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Pita, a software enthusiast who loves exploring technology and coding. Feel free to connect with me on my social platforms below!</p>
+        </div>
+    </section>
 
+    <section id="socials">
+        <div class="container">
+            <h2>Find Me Online</h2>
+            <ul>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
 
-
-
-  <span class="GruvboxRed">for</span> <span class="GruvboxOrange">(</span><span class="GruvboxYellow">int</span> <span class="GruvboxFg1">i</span> <span class="Operator">=</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">i</span> <span class="Operator">&lt;</span> <span class="GruvboxFg1"><span class="GruvboxPurple">ROWS</span></span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">i</span><span class="Operator">++</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-    <span class="GruvboxRed">for</span> <span class="GruvboxOrange">(</span><span class="GruvboxYellow">int</span> <span class="GruvboxFg1">j</span> <span class="Operator">=</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">j</span> <span class="Operator">&lt;</span> <span class="GruvboxFg1"><span class="GruvboxPurple">COLS</span></span><span class="GruvboxOrange">;</span> <span class="GruvboxFg1">j</span><span class="Operator">++</span><span class="GruvboxOrange">)</span> <span class="GruvboxOrange">{</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'#'</span><span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxPurple">2</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxPurple">2</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'+'</span><span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxOrange">(</span><span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">!=</span> <span class="GruvboxPurple">'#'</span><span class="GruvboxOrange">)</span> <span class="GruvboxRed">?</span> <span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span> <span class="Operator">=</span> <span class="GruvboxPurple">'+'</span> <span class="GruvboxOrange"><span class="GruvboxRed">:</span></span> <span class="GruvboxPurple">'#'</span> <span class="GruvboxOrange">;</span>
-      <span class="GruvboxFg1"><span class="GruvboxGreenBold">printf</span></span><span class="GruvboxOrange">(</span><span class="String"><span class="Comment">format: </span>&quot;%c&quot;</span><span class="GruvboxOrange">,</span><span class="GruvboxFg1">a</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">i</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">[</span><span class="GruvboxFg1">j</span><span class="GruvboxOrange">]</span><span class="GruvboxOrange">)</span><span class="GruvboxOrange">;</span>
-    <span class="GruvboxOrange">}</span>
-    <span class="GruvboxFg1"><span class="GruvboxGreenBold">printf</span></span><span class="GruvboxOrange">(</span><span class="String"><span class="Comment">format: </span>&quot;<span class="GruvboxOrange">\n</span>&quot;</span><span class="GruvboxOrange">)</span><span class="GruvboxOrange">;</span>
-  <span class="GruvboxOrange">}</span>
-
-
-  <span class="GruvboxRed">return</span> <span class="GruvboxPurple">0</span><span class="GruvboxOrange">;</span>
-<span class="GruvboxOrange">}</span>
-
-</pre>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pita. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-    <a href="a.html" class="button">Move to File A23</a>
-
