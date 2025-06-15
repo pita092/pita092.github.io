@@ -17,6 +17,20 @@ const interests = [
     category: "knees",
     icon: Trash,
   },
+  {
+    title: "poacher",
+    description: "cool dude",
+    link: "https://henry.is-a.dev/",
+    category: "person",
+    icon: Smile,
+  },
+  {
+    title: "Darkkal",
+    description: "cool dude",
+    link: "https://github.com/darkkal44",
+    category: "person",
+    icon: Smile,
+  },
 ]
 
 const quickLinks = [
