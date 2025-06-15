@@ -41,6 +41,34 @@ const quickLinks = [
     date: "2023-12-20",
     icon: FileText,
   },
+  {
+    title: "example",
+    description: "example",
+    link: "/blog/typescript-best-practices",
+    date: "2023-12-20",
+    icon: FileText,
+  },
+  {
+    title: "example",
+    description: "example",
+    link: "/blog/typescript-best-practices",
+    date: "2023-12-20",
+    icon: FileText,
+  },
+  {
+    title: "example",
+    description: "example",
+    link: "/blog/typescript-best-practices",
+    date: "2023-12-20",
+    icon: FileText,
+  },
+  {
+    title: "example",
+    description: "example",
+    link: "/blog/typescript-best-practices",
+    date: "2023-12-20",
+    icon: FileText,
+  },
 ]
 
 export default function Home() {
@@ -48,10 +76,10 @@ export default function Home() {
     <LayoutWrapper contentWidth="full">
       <div>
         {/* Interests Section */}
-        <section>
+        <section className="mb-12"> {/* Added margin-bottom here */}
           <h1 className="text-2xl font-medium text-gray-900 dark:text-gray-100 mb-8">Cool Stuff</h1>
 
-          <div className="interests-grid">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {interests.map((interest, index) => {
               const Icon = interest.icon
               return (
@@ -64,7 +92,7 @@ export default function Home() {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-gray-100 dark:bg-secondary flex items-center justify-center group-hover:bg-gray-200 dark:group-hover:bg-gray-700 transition-colors">
-                        <Icon className="h-4 w-4 text-gray-600 dark:text-gray-400" />
+                        <Icon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
                       </div>
                       <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-gray-700 dark:group-hover:text-gray-300">
                         {interest.title}
@@ -85,7 +113,7 @@ export default function Home() {
         <section className="quick-links-section">
           <h2 className="text-xl font-medium text-gray-900 dark:text-gray-100 mb-6">Recent Writing</h2>
 
-          <div className="quick-links-grid">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {quickLinks.map((link, index) => {
               const Icon = link.icon
               return (
@@ -111,3 +139,4 @@ export default function Home() {
     </LayoutWrapper>
   )
 }
+
