@@ -133,7 +133,7 @@ export default function Sidebar() {
         <div className="profile-section">
           <div className="flex items-center space-x-3 mb-3">
             <Image
-              src="/catpfp.jpg"
+              src="/pfp.jpg"
               alt="Pita"
               width={60}
               height={60}
