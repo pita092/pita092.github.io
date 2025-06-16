@@ -31,6 +31,13 @@ const interests = [
     category: "person",
     icon: Smile,
   },
+    {
+    title: "rod",
+    description: "cool dude's cat picutres",
+    link: "https://limewire.com/d/jxwoY#tjZeh7TUTI",
+    category: "person",
+    icon: Smile,
+  },
 ]
 
 const quickLinks = [
