@@ -34,7 +34,7 @@ const interests = [
     {
     title: "rod",
     description: "cool dude's cat picutres",
-    link: "https://limewire.com/d/jxwoY#tjZeh7TUTI",
+    link: "https://github.com/pita-org/cat",
     category: "person",
     icon: Smile,
   },
