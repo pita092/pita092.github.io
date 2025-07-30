@@ -9,11 +9,13 @@ export function Navigation({ children }: { children: React.ReactNode }) {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 md:hidden">
-          <SidebarTrigger className="-ml-1" />
-        </header>
         <div className="flex-1">{children}</div>
       </SidebarInset>
     </SidebarProvider>
   )
 }
+
+
+//         <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 md:hidden">
+//   <SidebarTrigger className="-ml-1" />
+// </header>
